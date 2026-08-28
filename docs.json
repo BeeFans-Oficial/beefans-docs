@@ -1,0 +1,91 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Ajuda Beefans",
+  "description": "Tutoriais da Beefans: como criar sua conta, publicar, vender packs, montar seu bot VIP no Telegram e transformar audiência em renda recorrente.",
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#FC3A68",
+    "light": "#FF7A9C",
+    "dark": "#D81E4D"
+  },
+  "appearance": {
+    "default": "dark"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Fraunces"
+    },
+    "body": {
+      "family": "Plus Jakarta Sans"
+    }
+  },
+  "logo": {
+    "light": "/logo/bee.svg",
+    "dark": "/logo/bee.svg",
+    "href": "https://beefans.com.br"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Tutoriais",
+        "groups": [
+          {
+            "group": "Comece por aqui",
+            "pages": ["index"]
+          },
+          {
+            "group": "Telegram e bot VIP",
+            "pages": ["telegram/criar-bot", "telegram/leads-e-disparos"]
+          },
+          {
+            "group": "Chat e relacionamento",
+            "pages": ["chat/chat-ao-vivo"]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Vídeos no YouTube",
+          "href": "https://www.youtube.com/@beefanss",
+          "icon": "youtube"
+        },
+        {
+          "anchor": "Instagram",
+          "href": "https://www.instagram.com/soubeefans",
+          "icon": "instagram"
+        },
+        {
+          "anchor": "Falar com o suporte",
+          "href": "https://t.me/atendimentobeefans",
+          "icon": "telegram"
+        }
+      ]
+    }
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Suporte",
+        "href": "https://t.me/atendimentobeefans"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Entrar na minha conta",
+      "href": "https://beefans.com.br/feed"
+    }
+  },
+  "footer": {
+    "socials": {
+      "instagram": "https://www.instagram.com/soubeefans",
+      "youtube": "https://www.youtube.com/@beefanss",
+      "website": "https://beefans.com.br"
+    }
+  },
+  "contextual": {
+    "options": ["copy", "view", "chatgpt", "claude"]
+  }
+}

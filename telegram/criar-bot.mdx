@@ -1,0 +1,136 @@
+---
+title: "Criar seu bot do Telegram e liberar o VIP automático"
+description: "Monte um bot no Telegram, conecte à Beefans e deixe o acesso ao seu grupo VIP 100% automático: assinou entra, cancelou sai."
+icon: "robot"
+---
+
+import { Video } from '/snippets/video.mdx'
+
+Ao fim deste tutorial, quem assinar seu plano entra sozinho no seu grupo VIP, e
+quem cancelar é removido sozinho. Você não adiciona e não remove ninguém na mão,
+nunca mais.
+
+<Video id="ceEo4PU50xs" title="Como criar seu bot do Telegram e liberar acesso VIP automático" />
+
+## O que você vai precisar
+
+<Check>Uma conta de criadora na Beefans, já verificada</Check>
+<Check>O app do Telegram no celular ou no computador</Check>
+<Check>Um grupo ou canal no Telegram (pode ser um que você já tem)</Check>
+
+Você **não** precisa saber programar. O bot é criado dentro do próprio Telegram,
+em poucos cliques, e a conexão com a Beefans é feita colando um código.
+
+## Passo a passo
+
+<Steps>
+  <Step title="Crie o bot no @BotFather">
+    Abra o Telegram e procure por **@BotFather** — é o robô oficial do Telegram
+    que cria outros robôs.
+
+    1. Envie o comando `/newbot`
+    2. Escolha um **nome** para o bot (ex.: `Meu Conteúdo VIP`)
+    3. Escolha um **username único terminado em `bot`** (ex.: `meubotvip_bot`)
+    4. **Copie o token** que o BotFather devolver — é um código no formato
+       `123456:ABC-DEF...`
+
+    <Warning>
+      Esse token é a senha do seu bot. Não mande para ninguém e não poste em
+      grupo. Se vazar, volte no BotFather e use `/revoke` para gerar outro.
+    </Warning>
+  </Step>
+
+  <Step title="Adicione o bot como administrador do seu grupo VIP">
+    No grupo ou canal que vai ser o VIP, adicione o bot que você acabou de criar
+    e **promova ele a administrador**, com permissão de adicionar e remover
+    membros.
+
+    Sem ser administrador, o bot não consegue colocar nem tirar ninguém — é o
+    erro mais comum de quem tenta configurar sozinho.
+  </Step>
+
+  <Step title="Pegue o ID do canal">
+    O ID é um número que começa com `-100`, tipo `-1001234567890`.
+
+    Jeito mais simples de descobrir: encaminhe qualquer mensagem do seu grupo
+    para o **@userinfobot** no Telegram. Ele responde com o ID do canal de
+    origem.
+  </Step>
+
+  <Step title="Conecte na Beefans">
+    Na sua conta, abra **Conecte Telegram** e preencha:
+
+    | Campo | O que colocar |
+    | --- | --- |
+    | Nome do bot | Como você quer chamar ele por dentro (ex.: `Meu Conteúdo VIP`) |
+    | Token do BotFather | O código que você copiou no passo 1 |
+    | ID do canal | O número que começa com `-100` |
+
+    Toque em **Conectar bot**. Se o token e o ID estiverem certos, o bot aparece
+    como conectado na tela.
+  </Step>
+
+  <Step title="Copie seu link e divulgue">
+    Com o bot conectado, use **Copiar link** para pegar o link do seu VIP. É esse
+    link que você coloca no Instagram, no TikTok, na bio e nos stories.
+
+    Quem clicar cai na página de pagamento. Pagou o Pix, o bot libera o acesso na
+    hora — sem você fazer nada.
+  </Step>
+</Steps>
+
+## Como fica o dia a dia depois
+
+<CardGroup cols={2}>
+  <Card title="Entrada automática" icon="right-to-bracket">
+    Pix confirmado, acesso liberado. A integração é nativa: ninguém entra sem
+    pagar e convite repassado não funciona.
+  </Card>
+  <Card title="Saída automática" icon="right-from-bracket">
+    Assinatura cancelada ou vencida, o bot remove a pessoa do grupo sozinho.
+  </Card>
+  <Card title="Vários VIPs" icon="layer-group">
+    Dá para ter mais de um grupo com preços diferentes — cada um com seu produto.
+  </Card>
+  <Card title="Todo mundo vira lead" icon="address-book">
+    Quem passa pelo bot fica salvo como contato seu, mesmo sem comprar.
+    [Aprenda a vender pra essa lista](/telegram/leads-e-disparos)
+  </Card>
+</CardGroup>
+
+## Perguntas frequentes
+
+<AccordionGroup>
+  <Accordion title="Preciso saber programar para criar o bot?">
+    Não. O bot é criado pelo próprio Telegram, em poucos cliques, e a conexão com
+    a Beefans é feita colando um código.
+  </Accordion>
+  <Accordion title="O bot remove sozinho quem cancelou a assinatura?">
+    Remove e adiciona 100% automático.
+  </Accordion>
+  <Accordion title="Posso usar um grupo ou canal que já existe?">
+    Pode sim. Chame o **@atendimentobeefans** no Telegram para migrar.
+  </Accordion>
+  <Accordion title="O bot precisa ser administrador do grupo?">
+    Sim. Sem permissão de administrador ele não consegue adicionar nem remover
+    membros.
+  </Accordion>
+  <Accordion title="Dá para ter mais de um grupo VIP com preços diferentes?">
+    Dá sim.
+  </Accordion>
+  <Accordion title="Alguém consegue entrar sem pagar ou repassar o convite?">
+    Não. Todos os acessos são liberados com a confirmação do Pix por integração
+    nativa.
+  </Accordion>
+</AccordionGroup>
+
+## Próximo passo
+
+<CardGroup cols={2}>
+  <Card title="Leads e disparos" icon="bullhorn" href="/telegram/leads-e-disparos">
+    Seu bot já está juntando contatos. Agora aprenda a vender para eles.
+  </Card>
+  <Card title="Chat ao vivo" icon="comments" href="/chat/chat-ao-vivo">
+    Converse, receba mimos e venda mídia bloqueada em tempo real.
+  </Card>
+</CardGroup>

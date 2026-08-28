@@ -1,0 +1,26 @@
+/* Ajustes finos de identidade Beefans sobre o tema Mint.
+   O rosa #fc3a68 e o fundo #0a0a0a vêm dos tokens reais do bee-front
+   (src/app/globals.css: --primary 343 97% 61%, --background 0 0% 3.9%). */
+
+:root {
+  --beefans-rosa: #fc3a68;
+  --beefans-preto: #0a0a0a;
+}
+
+/* Fundo do modo escuro alinhado ao app, não o cinza padrão do tema. */
+html.dark body,
+html.dark #content-area {
+  background-color: var(--beefans-preto);
+}
+
+/* Títulos em Fraunces pedem um pouco menos de espaçamento entre letras. */
+h1,
+h2,
+h3 {
+  letter-spacing: -0.02em;
+}
+
+/* Callouts e cards com a borda rosa discreta da marca. */
+#content-area a.card:hover {
+  border-color: rgba(252, 58, 104, 0.45);
+}
