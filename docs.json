@@ -32,15 +32,36 @@
         "groups": [
           {
             "group": "Comece por aqui",
-            "pages": ["index"]
+            "pages": [
+              "index",
+              "comecar/criar-conta"
+            ]
           },
           {
-            "group": "Telegram e bot VIP",
-            "pages": ["telegram/criar-bot", "telegram/leads-e-disparos"]
+            "group": "Publicar",
+            "pages": [
+              "publicar/feed-e-exclusivo"
+            ]
+          },
+          {
+            "group": "Vender",
+            "pages": [
+              "vender/packs"
+            ]
           },
           {
             "group": "Chat e relacionamento",
-            "pages": ["chat/chat-ao-vivo"]
+            "pages": [
+              "chat/mensagens-automaticas",
+              "chat/chat-ao-vivo"
+            ]
+          },
+          {
+            "group": "Telegram e bot VIP",
+            "pages": [
+              "telegram/criar-bot",
+              "telegram/leads-e-disparos"
+            ]
           }
         ]
       }
@@ -86,6 +107,11 @@
     }
   },
   "contextual": {
-    "options": ["copy", "view", "chatgpt", "claude"]
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude"
+    ]
   }
 }

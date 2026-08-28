@@ -1,0 +1,113 @@
+---
+title: "Mensagens automáticas e boas-vindas"
+description: "Configure as respostas que o chat envia sozinho quando alguém segue, assina, compra ou cancela — e a mensagem de boas-vindas do seu bot no Telegram."
+icon: "wand-magic-sparkles"
+---
+
+import { EmBreve } from '/snippets/video.mdx'
+
+A mensagem que chega no segundo em que a pessoa te segue converte mais que
+qualquer mensagem que você mande três horas depois. Automação aqui não é
+preguiça: é estar presente no único momento em que a pessoa está pensando em
+você.
+
+<EmBreve assunto="mensagem de boas-vindas" />
+
+<Warning>
+  Existem **dois** lugares de boas-vindas e eles não são a mesma coisa:
+
+  - **Mensagens automáticas** — o chat do seu perfil na Beefans
+  - **Mensagens de boas-vindas** — dentro do seu produto, o que o bot responde no
+    Telegram quando alguém dá `/start`
+
+  Configure os dois. Esta página cobre os dois.
+</Warning>
+
+## No chat da Beefans
+
+Em **Mensagens automáticas** você cria regras. Cada regra tem um gatilho, um
+atraso, uma mensagem e, se quiser, uma mídia.
+
+### Os quatro gatilhos
+
+| Gatilho | Quando dispara | Para que serve |
+| --- | --- | --- |
+| **Quando começar a te seguir** | A pessoa te seguiu de graça | Primeira mensagem de quem acabou de chegar |
+| **Quando assinar** | Assinatura confirmada | Boas-vindas de quem acabou de assinar |
+| **Quando comprar um conteúdo** | Compra concluída no chat | Agradecimento depois da compra |
+| **Quando cancelar a assinatura** | Assinatura cancelada | Última tentativa de trazer de volta |
+
+### Criando uma regra
+
+<Steps>
+  <Step title="Escolha o gatilho">
+    Comece por **Quando começar a te seguir**: é o de maior volume e o que mais
+    converte.
+  </Step>
+  <Step title="Escreva a mensagem">
+    Curta, no seu tom, com **uma** pergunta no fim. Pergunta puxa resposta, e
+    resposta transforma o disparo automático em conversa de verdade.
+
+    Exemplo do próprio app: *"Oi, amor! Que bom te ver por aqui 💛"*
+  </Step>
+  <Step title="Anexe uma mídia (opcional)">
+    Uma foto ou vídeo curto de apresentação aumenta muito a taxa de resposta.
+  </Step>
+  <Step title="Defina o atraso">
+    **Na hora**, 1 min, 5 min, 30 min ou 1 hora.
+
+    <Tip>
+      "Na hora" parece robô para algumas pessoas. Um atraso de 1 a 5 minutos
+      costuma soar mais natural — e ainda chega enquanto a pessoa está no app.
+    </Tip>
+  </Step>
+  <Step title="Dê um nome e ative">
+    O nome é só para você se achar depois. Regras podem ser **pausadas** e
+    reativadas quando quiser.
+  </Step>
+</Steps>
+
+## No bot do Telegram
+
+Dentro do seu produto, em **Mensagens de boas-vindas**, você configura o que o
+bot responde para quem chega pelo `/start`. É a primeira coisa que a pessoa vê
+antes de decidir pagar — trate como página de vendas, não como aviso.
+
+Boas-vindas do bot funcionam melhor com: uma frase sobre o que tem lá dentro,
+uma mídia de prévia e o botão de assinar logo em seguida.
+
+<Note>
+  Se você trocar a mídia da boas-vindas e o bot continuar mandando a antiga por
+  alguns minutos, é cache. Aguarde e teste de novo com `/start` numa conta que
+  não seja a sua.
+</Note>
+
+## Erros comuns
+
+<AccordionGroup>
+  <Accordion title="Texto grande demais">
+    Ninguém lê parágrafo em notificação. Duas ou três linhas.
+  </Accordion>
+  <Accordion title="Ofertar antes de conversar">
+    Na primeira mensagem, o objetivo é resposta — não venda. A oferta vem na
+    segunda ou terceira troca.
+  </Accordion>
+  <Accordion title="Deixar só a automática trabalhando">
+    A automática abre a conversa. Se ninguém responde depois, ela vira um robô
+    falando sozinho e a pessoa some.
+  </Accordion>
+  <Accordion title="Esquecer o gatilho de cancelamento">
+    É a regra que mais gente ignora e uma das que mais recupera dinheiro.
+  </Accordion>
+</AccordionGroup>
+
+## Próximo passo
+
+<CardGroup cols={2}>
+  <Card title="Chat ao vivo" icon="comments" href="/chat/chat-ao-vivo">
+    O que fazer quando a pessoa responde a sua automática.
+  </Card>
+  <Card title="Leads e disparos" icon="bullhorn" href="/telegram/leads-e-disparos">
+    Mensagem em massa para quem já está na sua base.
+  </Card>
+</CardGroup>
