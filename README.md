@@ -1,4 +1,4 @@
-# Ajuda Beefans — documentação
+# Ajuda Beefans, documentação
 
 Documentação pública da Beefans, publicada em
 **https://beefans.com.br/docs**.
@@ -23,7 +23,7 @@ Cada tutorial segue o mesmo formato:
 2. O vídeo do YouTube, pelo componente `<Video id="..." />` (`snippets/video.mdx`)
 3. O que você vai precisar (`<Check>`)
 4. Passo a passo (`<Steps>`)
-5. Perguntas frequentes (`<AccordionGroup>`) — o texto vem da descrição do
+5. Perguntas frequentes (`<AccordionGroup>`). O texto vem da descrição do
    vídeo no YouTube, para as duas fontes nunca divergirem
 6. Próximo passo (`<CardGroup>`)
 
