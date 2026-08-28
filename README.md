@@ -45,15 +45,29 @@ Ajustes finos de CSS ficam em `style.css`.
 
 Canal: https://www.youtube.com/@beefanss
 
-| # | Tutorial | Vídeo |
-| --- | --- | --- |
-| 1 | Criar e verificar sua conta | a gravar |
-| 2 | Publicar: feed social e exclusivo | a gravar |
-| 3 | Bot do Telegram e VIP automático | `ceEo4PU50xs` |
-| 4 | Mensagem de boas-vindas | a gravar |
-| 5 | Criar e vender packs | a gravar |
-| 6 | Chat ao vivo | `SDenfzDNA-E` |
-| 7 | Leads do bot: disparos | `ovifNq8Vp4E` |
+| # | Tutorial | Página | Vídeo |
+| --- | --- | --- | --- |
+| 1 | Criar e verificar sua conta | `comecar/criar-conta` | a gravar |
+| 2 | Publicar: feed e exclusivo | `publicar/feed-e-exclusivo` | a gravar |
+| 3 | Bot do Telegram e VIP automático | `telegram/criar-bot` | `ceEo4PU50xs` |
+| 4 | Mensagem de boas-vindas | `chat/mensagens-automaticas` | a gravar |
+| 5 | Criar e vender packs | `vender/packs` | a gravar |
+| 6 | Chat ao vivo | `chat/chat-ao-vivo` | `SDenfzDNA-E` |
+| 7 | Leads do bot: disparos | `telegram/leads-e-disparos` | `ovifNq8Vp4E` |
 
 Quando um vídeo novo sair, troque o `<EmBreve>` da página pelo `<Video>` com o
 ID e copie o bloco de FAQ da descrição do YouTube.
+
+## De onde vem o passo a passo
+
+Os rótulos citados nas páginas são os textos reais das telas do `bee-front`, não
+paráfrase. Antes de escrever ou revisar um passo, abra a tela correspondente:
+
+| Página do docs | Tela |
+| --- | --- |
+| `comecar/criar-conta` | `src/fan/components/become-creator/BecomeCreatorWizard.tsx` + `src/fan/i18n/domains/profile.ts` |
+| `publicar/feed-e-exclusivo` | `dashboard/midias/page.tsx`, `components/gallery/CreateCarouselPostSheet.tsx` |
+| `vender/packs` | `dashboard/produtos/[slug]/packs/`, `components/conteudos/addButton.tsx` |
+| `chat/mensagens-automaticas` | `dashboard/automations/page.tsx` |
+| `telegram/criar-bot` | `dashboard/telegram/page.tsx` |
+| `telegram/leads-e-disparos` | `dashboard/disparos/page.tsx`, `dashboard/produtos/[slug]/leads/` |
